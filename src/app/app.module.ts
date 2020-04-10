@@ -10,7 +10,8 @@ import { ValkyriesComponent } from './valkyries/valkyries.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,RouterModule.forRoot([
-    
+    {path:"",component:AppComponent},
+    {path:"valkyries",component:ValkyriesComponent}
   ])],
   declarations: [ AppComponent, TopBarComponent, ValkyriesComponent ],
   bootstrap:    [ AppComponent ]
